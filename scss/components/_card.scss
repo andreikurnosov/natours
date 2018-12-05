@@ -69,7 +69,6 @@
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 
-
     &--1 {
       background-image: linear-gradient(
           to right bottom,
@@ -78,17 +77,17 @@
         ),
         url(../img/nat-5-small.jpg);
 
-        @media (min-resolution: 192dpi) and (min-width: 37.5em),
-          (-webkit-min-device-pixel-reatio: 2) and (min-width: 37.5em),
-          (min-width: 125em){
-            background-image: linear-gradient(
-                to right bottom,
-                $color-secondary-light,
-                $color-secondary-dark
-              ),
-              url(../img/nat-5.jpg);
-        }
-  }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (-webkit-min-device-pixel-reatio: 2) and (min-width: 37.5em),
+        (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+          ),
+          url(../img/nat-5.jpg);
+      }
+    }
 
     &--2 {
       background-image: linear-gradient(
@@ -98,19 +97,17 @@
         ),
         url(../img/nat-6-small.jpg);
 
-        @media (min-resolution: 192dpi) and (min-width: 37.5em),
-          (-webkit-min-device-pixel-reatio: 2) and (min-width: 37.5em),
-          (min-width: 125em){
-            background-image: linear-gradient(
-                to right bottom,
-                $color-secondary-light,
-                $color-secondary-dark
-              ),
-              url(../img/nat-6.jpg);
-        }
-  }
-
-
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (-webkit-min-device-pixel-reatio: 2) and (min-width: 37.5em),
+        (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+          ),
+          url(../img/nat-6.jpg);
+      }
+    }
 
     &--3 {
       background-image: linear-gradient(
@@ -120,17 +117,16 @@
         ),
         url(../img/nat-7-small.jpg);
 
-        @media (min-resolution: 192dpi) and (min-width: 37.5em),
-          (-webkit-min-device-pixel-reatio: 2) and (min-width: 37.5em),
-          (min-width: 125em){
-            background-image: linear-gradient(
-                to right bottom,
-                $color-secondary-light,
-                $color-secondary-dark
-              ),
-              url(../img/nat-7.jpg);
-        }
-
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (-webkit-min-device-pixel-reatio: 2) and (min-width: 37.5em),
+        (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+          ),
+          url(../img/nat-7.jpg);
+      }
     }
   }
 
@@ -192,9 +188,7 @@
         &:not(:last-child) {
           border-bottom: 1px solid $color-grey-light-2;
         }
-
       }
-
     }
   }
 
@@ -214,7 +208,6 @@
   &__price-only {
     font-size: 1.4rem;
     text-transform: uppercase;
-
   }
 
   &__price-value {
@@ -222,11 +215,8 @@
     font-weight: 100;
   }
 
-
-
-
-
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
@@ -268,6 +258,5 @@
     &__price-value {
       font-size: 4rem;
     }
-
   }
 }
